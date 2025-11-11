@@ -38,7 +38,7 @@ async def main():
     app.add_handler(MessageHandler(filters.VOICE, voice_handler))  # голосовые
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, text_handler))  # текст
 
-    print("🤖 Бот запущен...")
+    print("🤖 Bot is running...")
 
     await app.initialize()
     await app.start()
